@@ -120,8 +120,8 @@ nav ul li a{
     color: white;
 }
 nav ul li a:hover{
-    font-size: 1.04rem;
-    color: lavender;
+    
+    color: #00ffee;
 }
 .left{
     font-weight: 600;
@@ -323,7 +323,7 @@ nav ul li a:hover{
     background-color: #1a1a1a;
     color: white;
     width: 300px;
-    padding: 60px;
+    padding: 90px 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px #00ffee;
     transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
@@ -380,4 +380,39 @@ nav ul li a:hover{
     margin-bottom: 20px;
     color: #fff;
     font-weight: 600;
+}
+
+
+
+/* Footer Section */
+footer {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p:first-child {
+    font-weight: 600;
+}
+
+footer p:last-child {
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 10px;
+    }
 }
