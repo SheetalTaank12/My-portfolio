@@ -436,6 +436,12 @@ footer p:last-child {
         align-items: center;
         margin: 100px 20px 20px;
     }
+    main {
+        padding-top: 100px; /* slightly more than nav height */
+        margin-top: 80px;
+    }
+    
+    
 
     .firstSection div,
     .rightSection img {
@@ -446,6 +452,7 @@ footer p:last-child {
 
     .leftSection {
         font-size: 2rem;
+       
     }
 
     .leftSection .socials {
@@ -470,7 +477,7 @@ footer p:last-child {
     }
 
     .projectCard {
-        width: 90%;
+        width: 100%;
         padding: 30px 20px;
     }
 
