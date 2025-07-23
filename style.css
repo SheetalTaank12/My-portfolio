@@ -33,25 +33,37 @@ nav{
     height: 70px;
     background-color: #2a2a2a;
 }
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+nav ul li a:hover{
+    
+    color: #00ffee;
+    transform: scale(1.2);
+}
+nav .left {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
 div ul{
     display: flex;
     justify-content: center;
 }
 .firstSection{
     display: flex;
-    justify-content: space-around;
-    margin-top: 80px;
-    margin-left: 60px;
-    /* margin: 23px 0; */
+    justify-content: space-evenly;
+    margin-top: 90px;
+    margin-left: 80px;
+    
 }
 .firstSection div{
-    width: 40%;
+    width: 45%;
 }
-/* .rightSection{
-    width:50%;
-} */
+
 .rightSection img{
-    width: 50%;
+    width: 55%;
     margin-top:20px;
     border-radius: 50%;
     border: 3px solid #00ffee;
@@ -61,7 +73,7 @@ div ul{
     
 }
 .rightSection img:hover{
-    width: 50%;
+    width: 55%;
     border-radius: 50%;
     border: 3px solid #00ffee;
     box-shadow : 0 0 25px #00ffee;
@@ -72,20 +84,20 @@ div ul{
 .socials{
     display:flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .leftSection{
     font-size: 2.5rem;
     margin: 30px 0;
     font-weight: 530;
-    background-image: "C:\Users\My Account\Downloads\developer.png";
+    
 }
 .leftSection div{
     font-size: 1.5rem;
     font-weight: 100;
 }
-.leftSection div a{
+.leftSection .socials a{
     text-decoration: none;
     color: #00ffee;
     display: flex;
@@ -99,33 +111,20 @@ div ul{
     transition: box-shadow 0.1s linear 0.01s;
 
 }
-/* .leftSection span{
-    height:80spx;
-} */
-.leftSection div a:hover{
+.leftSection span{
+    height:80 px;
+}
+.leftSection .socials a:hover{
     box-shadow : 0 0 20px #00ffee;
 
 }
-.leftSection p{
-    font-size: 1rem;
-    font-weight: 100;
 
-}
 
-.purple{
+.sky{
     color: #00ffee;
 }
-nav ul li a{
-    text-decoration: none;
-    color: white;
-}
-nav ul li a:hover{
-    
-    color: #00ffee;
-}
-.left{
-    font-weight: 600;
-}
+
+
 
    /* Contact Form */
    #contact-form {
@@ -193,7 +192,7 @@ nav ul li a:hover{
 
 .card-title {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #00ffee;  /* You can adjust the title color here */
     font-weight: bold;
 }
@@ -205,7 +204,7 @@ nav ul li a:hover{
     margin-top: 10px;
 }
 .hr{
-    /* height: 10%; */
+   
     width: 85%;
     background-color: #585858;
     padding: 2px;
@@ -234,7 +233,6 @@ nav ul li a:hover{
 /* Skills Section */
 #skills {
     padding: 40px 20px;
-    /* background-color: #121212; */
     color: white;
     text-align: center;
 }
@@ -263,9 +261,10 @@ nav ul li a:hover{
 .skills-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
     margin-top: 20px;
+    padding-bottom: 30px;
 }
 
 .skill-card {
@@ -288,14 +287,15 @@ nav ul li a:hover{
 }
 
 .skill-icon {
-    width: 90px;
-    height: 80px;
+    width: 100px;
+    height: 90px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .skill-name {
     font-size: 1rem;
-    color: #00ffee;
+    color: yellow;
     font-weight: 500;
 }
 
@@ -307,6 +307,10 @@ nav ul li a:hover{
     padding: 30px 90px;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .projectsContainer {
@@ -314,8 +318,6 @@ nav ul li a:hover{
     justify-content: start;
     align-items: center;
     gap: 30px;
-    overflow-x: auto; /* Enables horizontal scrolling */
-    scroll-snap-type: x mandatory; /* Snap scroll to each card */
     padding-bottom: 20px;
 }
 
@@ -338,7 +340,7 @@ nav ul li a:hover{
 .projectTitle {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #00ffee;
+    color: yellow;
     font-weight: bold;
 }
 
@@ -377,9 +379,9 @@ nav ul li a:hover{
 }
 .projects-card-title {
     font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #fff;
-    font-weight: 600;
+    margin-bottom: 30px;
+    color: #00ffee;
+    font-weight: 500;
 }
 
 
@@ -410,7 +412,7 @@ footer p:last-child {
     font-weight: 300;
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments in footer */
 @media (max-width: 768px) {
     footer {
         padding: 15px 10px;
