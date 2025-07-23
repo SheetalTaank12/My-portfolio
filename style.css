@@ -418,3 +418,78 @@ footer p:last-child {
         padding: 15px 10px;
     }
 }
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    nav .right ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+        margin: 100px 20px 20px;
+    }
+
+    .firstSection div,
+    .rightSection img {
+        width: 90% !important;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .leftSection {
+        font-size: 2rem;
+    }
+
+    .leftSection .socials {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .skill-card {
+        width: 80%;
+    }
+
+    .projectsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectCard {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .card,
+    .skills-card {
+        width: 90%;
+    }
+
+    .hr {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
