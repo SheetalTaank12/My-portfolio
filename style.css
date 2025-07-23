@@ -493,3 +493,38 @@ footer p:last-child {
         font-size: 0.9rem;
     }
 }
+/* Hamburger base style */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #00ffee;
+}
+
+/* Mobile menu hidden by default */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .right {
+        display: none;
+        width: 100%;
+    }
+
+    .right.active {
+        display: block;
+    }
+
+    .right ul {
+        flex-direction: column;
+        background-color: #2a2a2a;
+        padding: 10px 0;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
