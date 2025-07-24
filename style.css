@@ -428,7 +428,8 @@ footer p:last-child {
     .firstSection {
         flex-direction: column;
         align-items: center;
-        margin: 100px 20px;
+       margin-left: 0;
+        margin-bottom: 0.5rem;
     }
     main {
         padding-top: 50px; /* slightly more than nav height */
@@ -607,13 +608,12 @@ Mobile menu hidden by default*/
     
      position: relative;
 
-   /* min-height: 100vh;
-    height: auto;   */
+  
 
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* padding-bottom: 150px;  */
+    
 
 
   }
