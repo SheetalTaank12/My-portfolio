@@ -329,7 +329,7 @@ div ul{
     border-radius: 10px;
     box-shadow: 0 0 10px #00ffee;
     transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
-    scroll-snap-align: start; /* Ensure the card aligns correctly during scroll */
+    
 }
 
 .projectCard:hover {
@@ -343,26 +343,17 @@ div ul{
     color: yellow;
     font-weight: bold;
 }
-
+.projectImg {
+    width: 80%;
+    height: 90%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
 .projectDescription {
     font-size: 1rem;
     color: #bbb;
     line-height: 1.5;
     font-weight: 300;
-}
-
-/* Styling the scrollbar */
-.projectsContainer::-webkit-scrollbar {
-    height: 10px;
-}
-
-.projectsContainer::-webkit-scrollbar-thumb {
-    background-color: #00ffee;
-    border-radius: 5px;
-}
-
-.projectsContainer::-webkit-scrollbar-track {
-    background-color: #333;
 }
 
 /* Responsive adjustments */
@@ -437,8 +428,8 @@ footer p:last-child {
         margin: 100px 20px 20px;
     }
     main {
-        padding-top: 100px; /* slightly more than nav height */
-        margin-top: 80px;
+        padding-top: 50px; /* slightly more than nav height */
+        margin-top: 20px;
     }
     
     
@@ -462,14 +453,32 @@ footer p:last-child {
     }
 
     .skills-container {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
-        gap: 20px;
+        gap: 0.6rem;
+        padding: 0.1rem;
     }
 
     .skill-card {
-        width: 80%;
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 0.1rem;
+        border-radius: 7px;
     }
+    .skill-icon {
+        width: 70%;
+        height: 70%;
+        margin-bottom: 0.2rem;
+        border-radius: 0.5rem;
+    }
+    
+    .skill-name {
+        font-size: 0.5rem;
+        color: yellow;
+        font-weight: 200;
+    }
+    
 
     .projectsContainer {
         flex-direction: column;
@@ -479,6 +488,12 @@ footer p:last-child {
     .projectCard {
         width: 140%;
         padding: 30px 20px;
+    }
+    .projects-card-title{
+        font-size: 1.5rem;
+    }
+    .projectDescription{
+        font-size: 0.8rem;
     }
 
     .card,
@@ -499,4 +514,128 @@ footer p:last-child {
     footer {
         font-size: 0.9rem;
     }
+    .secondSection .card-content{
+       
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+     .card-title{
+        font-size: 1.8rem;
+    }
 }
+
+
+/* Hamburger base style */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #00ffee;
+}
+/* 
+Mobile menu hidden by default*/
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .right {
+        display: none;
+        width: 100%;
+    }
+
+    .right.active {
+        display: block;
+    }
+
+    .right ul {
+        flex-direction: column;
+        background-color: #2a2a2a;
+        padding: 10px 0;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+} 
+.leftSection  {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  .leftSection.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .rightSection  {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  .rightSection.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .secondSection  {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  .secondSection.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .skills  {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  .skills.show{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .firstSection{
+    width: 100%;
+    background-image:url("images/firstsection-background.jpg") ;
+    
+    /* position: relative;
+
+    min-height: 100vh;
+    height: auto;   */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding-bottom: 150px;  */
+
+
+  }
+  .thirdSection, #skills{
+    width: 100%;
+    background-image: url("images/skillsection-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+  #contact{
+    width: 100%;
+    background-image: url("images/contact-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+  }
+  .secondSection{
+    width: 100%;
+    background-image: url("images/about-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+  }
