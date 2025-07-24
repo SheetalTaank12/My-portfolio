@@ -15,6 +15,9 @@ body {
     background-color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
 }
+html,body{
+    overflow-x: hidden;
+}
 li{
     list-style: none;
     margin: 0 23px;
@@ -425,7 +428,7 @@ footer p:last-child {
     .firstSection {
         flex-direction: column;
         align-items: center;
-        margin: 100px 20px 20px;
+        margin: 100px 20px;
     }
     main {
         padding-top: 50px; /* slightly more than nav height */
@@ -601,9 +604,10 @@ Mobile menu hidden by default*/
     width: 100%;
     background-image:url("images/firstsection-background.jpg") ;
     
-    /* position: relative;
+    
+     position: relative;
 
-    min-height: 100vh;
+   /* min-height: 100vh;
     height: auto;   */
 
     background-size: cover;
