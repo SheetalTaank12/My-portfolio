@@ -17,6 +17,7 @@ body {
 }
 html,body{
     overflow-x: hidden;
+    width: 100%;
 }
 li{
     list-style: none;
@@ -57,33 +58,33 @@ div ul{
 .firstSection{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 90px;
-    margin-left: 80px;
-    
+    margin-top: 70px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+   height: 100vh;
+    width: 100%;
+    overflow: hidden; /* hide accidental overflows */
 }
 .firstSection div{
     width: 45%;
 }
 
 .rightSection img{
-    width: 55%;
+    width: 70%;
     margin-top:20px;
     border-radius: 50%;
     border: 3px solid #00ffee;
     box-shadow : 0 0 15px #00ffee;
     transition: box-shadow 0.2s ease-in 0.01s;
-    margin-left: 60px;
-    
+       
 }
 .rightSection img:hover{
-    width: 55%;
+    width: 70%;
     border-radius: 50%;
     border: 3px solid #00ffee;
     box-shadow : 0 0 25px #00ffee;
-    
-   
-    
 }
+
 .socials{
     display:flex;
     justify-content: space-around;
@@ -94,6 +95,7 @@ div ul{
     font-size: 2.5rem;
     margin: 30px 0;
     font-weight: 530;
+    padding-left: 1.5rem;
     
 }
 .leftSection div{
@@ -172,6 +174,7 @@ div ul{
     justify-content: center;
     align-items: center;
     min-height: 80vh;  /* Adjust this height based on the content */
+   
     padding: 20px;
 }
 
@@ -318,9 +321,10 @@ div ul{
 
 .projectsContainer {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    
     padding-bottom: 20px;
 }
 
@@ -328,11 +332,16 @@ div ul{
     background-color: #1a1a1a;
     color: white;
     width: 300px;
-    padding: 90px 20px;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    padding: 50px 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px #00ffee;
     transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
-    
+    margin-bottom: 1rem;
+}
+.projectCard a{
+    color: yellow;
 }
 
 .projectCard:hover {
@@ -604,10 +613,6 @@ Mobile menu hidden by default*/
   .firstSection{
     width: 100%;
     background-image:url("images/firstsection-background.jpg") ;
-    
-    
-     position: relative;
-
   
 
     background-size:cover;
@@ -617,13 +622,20 @@ Mobile menu hidden by default*/
 
 
   }
-  .thirdSection, #skills{
+    #skills{
     width: 100%;
     background-image: url("images/skillsection-background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
+  }
+  .thirdSection{
+    width: 100%;
+    background-image: url("images/projects-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   #contact{
     width: 100%;
